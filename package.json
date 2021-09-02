@@ -1,0 +1,14 @@
+{
+  "name": "crown-store",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "cd server && yarn start",
+    "build": "cd client && npm run build",
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
